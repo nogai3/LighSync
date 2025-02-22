@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Основные стили */
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0efed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Шапка */
+.header {
+    height: 55px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #d33;
+   /* background-image: url('../assets/images/lighsync_creators_of_glackus.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+
+.header a {
+    text-decoration: none;
+    color: #d33;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: color 0.3s;
+    font-size: 24px;
+}
+
+.header a:hover {
+    color: #a00;
+}
+
+.header p {
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+/* Контент */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #d33;
+    font-size: 24px;
+    border-bottom: 2px solid #d33;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.center-box {
+    border: 1px solid #d33;
+    padding: 10px;
+    margin-top: 20px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.center-box h2 {
+    margin-top: -5px;
+    background-color: #d33;
+    color: white;
+}
+
+.center-box li {
+    list-style: none;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+    border-top: 3px solid #d33;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+
