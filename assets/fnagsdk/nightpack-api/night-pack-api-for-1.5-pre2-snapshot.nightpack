@@ -1,0 +1,67 @@
+;	FNAG1 Night Pack | Work with: FNAG 1.5 pre-2 snapshot`s
+;	(C) LighSync Games. 2023-2025.
+;	Written by: Gleb Ustimenko
+
+[CustomNightPack]
+; NIGHT_NAME = night name (number, name, e.t.c)
+; NIGHT_TIME = seconds | default (night 1-5): 334.8 seconds | (night 6): 669.6 seconds
+; NIGHT_MUSIC_BOX_TIME = seconds
+; NIGHT_PATTERN_CHANGES_DELAY = night random movement pattern delay changing. default 58 seconds
+NIGHT_NAME=YOUR_VALUE
+NIGHT_TIME=YOUR_VALUE
+NIGHT_MUSIC_BOX_TIME=YOUR_VALUE
+NIGHT_PATTERN_CHANGES_DELAY=YOUR_VALUE
+; Movement
+[Movement_Pattern_1]
+; Delay = seconds
+NIGHT_GLACKUS_MOVEMENT_DELAY=YOUR_VALUE
+NIGHT_WANDARMO_MOVEMENT_DELAY=YOUR_VALUE
+NIGHT_FSTER_MOVEMENT_DELAY=YOUR_VALUE
+[Movement_Pattern_2]
+; Delay = seconds
+NIGHT_GLACKUS_MOVEMENT_DELAY=YOUR_VALUE
+NIGHT_WANDARMO_MOVEMENT_DELAY=YOUR_VALUE
+NIGHT_FSTER_MOVEMENT_DELAY=YOUR_VALUE
+[AnimatronicsActions]
+; NIGHT_FSTER_KILLING_DELAY | Delay = secodns | default delay: 2.50 seconds
+; NIGHT_FSTER_VOLTAGE_DELAY | Delay = seconds | default delay: 1.75 seconds
+; NIGHT_GLACKUS_MUSIC_BOX_WELCOME_DELAY | Delay = seconds | default delay: 5.15 seconds
+; NIGHT_GLACKUS_KILLING_DELAY | Delay = seconds | default delay: 10 seconds
+; NIGHT_WANDARMO_COLORS_CHOOSE_DELAY | Delay = seconds | default delay: 1.45 seconds | That variable regulate: color memory time
+; NIGHT_BIGGIE_WELCOME_VALUE_ADDING_DELAY | Delay = seconds | default delay: 50 seconds
+; NIGHT_BIGGIE_NEEDED_WELCOME_VALUE | Needed value for create Biggie in office | default value: 10
+; NIGHT_BIGGIE_VISIBILITY_DELAY | Delay = seconds | default delay: 15 seconds
+; NIGHT_BIGGIE_KILLING_DELAY | Delay = seconds | default delay: 3.50 seconds
+; NIGHT_BIGGIE_IN_CAM_KILLING_DELAY | Delay = seconds | default delay: 5.50 seconds
+NIGHT_FSTER_KILLING_DELAY=YOUR_VALUE
+NIGHT_FSTER_VOLTAGE_DELAY=YOUR_VALUE
+NIGHT_GLACKUS_MUSIC_BOX_WELCOME_DELAY=YOUR_VALUE
+NIGHT_GLACKUS_MUSIC_BOX_KILLING_DELAY=YOUR_VALUE
+NIGHT_WANDARMO_COLORS_CHOOSE_DELAY=YOUR_VALUE
+NIGHT_BIGGIE_WELCOME_VALUE_ADDING_DELAY=YOUR_VALUE
+NIGHT_BIGGIE_NEEDED_WELCOME_VALUE=YOUR_VALUE
+NIGHT_BIGGIE_VISIBILITY_DELAY=YOUR_VALUE
+NIGHT_BIGGIE_KILLING_DELAY=YOUR_VALUE
+NIGHT_BIGGIE_IN_CAM_KILLING_DELAY=YOUR_VALUE
+[Shocker]
+; NIGHT_SHOCKER_DELAY | Delay = seconds | default delay: 10 seconds
+NIGHT_SHOCKER_REMOVING_DELAY=YOUR_VALUE
+[CameraBroking]
+; NIGHT_CAMERA_BROKING_RANDOM_DELAY | Delay = seconds | default delay: 58 seconds
+; NIGHT_CAMERA_BROKING_REMOVE_DELAY | Delay = seconds | default delay: 5.75 seconds
+NIGHT_CAMERA_BROKING_RANDOM_DELAY=YOUR_VALUE
+NIGHT_CAMERA_BROKING_REMOVE_DELAY=YOUR_VALUE
+[RandomJumpscareActions]
+; NIGHT_RANDOM_JUMPSCARE_DELAY | Delay = seconds | default delay: 5.58 seconds
+; NIGHT_RANDOM_JUMPSCARE_REMOVING_DELAY | Delay = seconds | default delay: 1.45 seconds
+; Needed value = the number of values ​​of the variable after which there will be random jumpscare | default 15
+NIGHT_RANDOM_JUMPSCARE_DELAY=YOUR_VALUE
+NIGHT_RANDOM_JUMPSCARE_REMOVING_DELAY=YOUR_VALUE
+NIGHT_RANDOM_JUMPSCARE_NEEDED_VALUE=YOUR_VALUE
+[ReCharger]
+; NIGHT_RECHARGER_VALUE | Number of rechargers per Night
+; NIGHT_RECHARGER_RANDOM_VALUE | Percentage increase of 'NIGHT_RECHARGER_VALUE' by 1
+; NIGHT_RECHARGER_PERCENTAGE_ADDING | The percentage that will increase after charging
+NIGHT_RECHARGER_VALUE=YOUR_VALUE
+NIGHT_RECHARGER_RANDOM_VALUE=YOUR_VALUE
+NIGHT_RECHARGER_PERCENTAGE_ADDING=YOUR_VALUE
