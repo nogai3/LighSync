@@ -3,167 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>LighSync Games | Добро пожаловать!</title>
 </head>
 <body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-        :root {
-            --primary-color: #ab2f05;           /* цвет ссылок и выделения */
-            --primary-color-hover: #8f2603;
-            --bg-color: #f7f7f7;              /* мягкий нейтральный фон */
-            --text-color: #333;
-            --accent-color: #555;
-            --card-bg: #ffffff;
-            --border-radius: 10px;            /* более округлые углы */
-            --transition-speed: 0.3s;
-        }
-
-        /* Сброс базовых стилей */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Основные стили страницы */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Шапка */
-        .header {
-            background-color: var(--card-bg);
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            border-bottom: 3px solid var(--primary-color);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            height: 50px;
-            cursor: pointer;
-            transition: transform var(--transition-speed);
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .header a {
-            text-decoration: none;
-            color: var(--primary-color); /* сохранён цвет ссылок */
-            font-weight: bold;
-            margin-left: 20px;
-            font-size: 24px;
-            transition: color var(--transition-speed);
-        }
-
-        .header p {
-            text-decoration: none;
-            font-weight: bold;
-            margin-left: 20px;
-            font-size: 24px;
-            cursor: default;
-        }
-
-        .header a:hover {
-            color: var(--primary-color-hover);
-        }
-
-        /* Основной контейнер */
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background: var(--card-bg);
-            padding: 30px;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Заголовки */
-        h1 {
-            color: var(--primary-color);
-            font-size: 28px;
-            margin-bottom: 15px;
-            border-top: 2px solid var(--primary-color);
-            /* border-bottom: 2px solid var(--primary-color); */
-            margin-bottom: 5px;
-            padding-bottom: 5px;
-        }
-
-        /* Абзацы */
-        p {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        /* Блок по центру */
-        .center-box {
-            background: var(--card-bg);
-            border: 1px solid var(--primary-color);
-            border-radius: var(--border-radius);
-            padding: 20px;
-            margin: 30px auto;
-            width: 60%;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .center-box h2 {
-            margin-top: 0;
-            background: var(--primary-color);
-            color: #fff;
-            padding: 10px;
-            border-radius: var(--border-radius) var(--border-radius) 0 0;
-        }
-
-        .center-box li {
-            list-style: none;
-            margin: 10px 0;
-        }
-
-        .center-box details {
-            font-size: 18px;
-            /* color: var(--primary-color); */
-            margin-bottom: 10px;
-            cursor: default;
-        }
-
-        .center-box summary {
-            margin-bottom: 10px;
-            cursor: default;
-        }
-
-        /* Гибкий контейнер */
-        .wrapper {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Подвал */
-        .footer {
-            margin-top: auto;
-            background-color: var(--card-bg);
-            border-top: 3px solid var(--primary-color);
-            text-align: center;
-            padding: 15px 0;
-            font-size: 14px;
-            color: var(--accent-color);
-        }
-
-    </style>
     <div class="wrapper">
         <div class="header">
             <img class="logo" src="assets/images/logo.png" onclick="window.location.href = 'index.html';" alt="lighsync_logo">
@@ -179,6 +22,12 @@
             <center>
                 <div class="center-box">
                     <h2>Блог</h2>
+                    <!-- Post 3 -->
+                     <h1>Мы приостанавливаем загрузку FNAG с нашего сайта...</h1>
+                     <p>Теперь вы можете скачать всё через: LighSync Games Launcher! Мы не удаляем её с сайта. Просто предлагаем перейти на более безопасный и удобный метод установки наших игр!</p>
+                     <a href="downloads.html">его можно скачать тут</a>
+                     <h6>Автор: Gleb Ustimenko</h6>
+                     <h6>Дата: 31.03.2025</h6>
                     <!-- Post 2 -->
                      <h1>FNAG | 1.5 | 25w10d/snapshot | Вышел!</h1>
                      <p>В снапшоте появилось очень много изменений! Посмотреть их можно <a href="25w10d-changelog.html">здесь</a></p>
