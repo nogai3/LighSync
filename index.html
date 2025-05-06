@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>LighSync Games | Добро пожаловать!</title>
+  <meta charset="utf-8">
+  <title>LighSync Games | Главная</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LighSync Games">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
-            <img class="logo" src="assets/images/logo.png" onclick="window.location.href = 'index.html';" alt="lighsync_logo">
-            <p>главная</p>
-            <a href="about.html">о нас</a>
-            <a href="games.html">игры</a>
-            <a href="downloads.html">загрузка</a>
-            <a href="FNAGSDK.html">fnag-sdk</a>
-            <a href="https://github.com/nogai3/LighSync/issues">баг-трекер</a>
-        </div>
+	<div class="wrapper">
 
-        <div class="main">
-            <center>
-                <div class="center-box">
-                    <h2>Блог</h2>
-                    <!-- Post 3 -->
-                     <h1>Мы приостанавливаем загрузку FNAG с нашего сайта...</h1>
-                     <p>Теперь вы можете скачать всё через: LighSync Games Launcher! Мы не удаляем её с сайта. Просто предлагаем перейти на более безопасный и удобный метод установки наших игр!</p>
-                     <a href="downloads.html">его можно скачать тут</a>
-                     <h6>Автор: Gleb Ustimenko</h6>
-                     <h6>Дата: 31.03.2025</h6>
-                    <!-- Post 2 -->
-                     <h1>FNAG | 1.5 | 25w10d/snapshot | Вышел!</h1>
-                     <p>В снапшоте появилось очень много изменений! Посмотреть их можно <a href="25w10d-changelog.html">здесь</a></p>
-                     <img src="assets/images/post2.jpg" height="75px">
-                     <h6>Автор: Gleb Ustimenko</h6>
-                     <h6>Дата: 07.03.2025</h6>
-                    <!-- Post 1 -->
-                    <h1>FNAG 1.5 | В разработке!</h1>
-                    <p>Я устал сидеть не над чем, и начал разработку версии FNAG 1.5 | Скачать вы её можете <a href="https://nogai3.github.io/fnag/downloads">здесь</a></p>
-                    <img src="assets/images/lighsync_creators_of_glackus.png" height="240px">
-                    <h6>Автор: Gleb Ustimenko</h6>
-                    <h6>Дата: 22.02.2025</h6>
-                </div>
-            </center>
-        </div>
-    </div>
+		<header>
+			<img src="assets/images/logo260x48.png" alt="LighSync Games" onclick="window.location.href = 'index.html';">
+			<br>
+			<ul id="menu">
+				<li><a href="credits/index.html">люди</a></li>
+				<li><a href="#">игры</a>
+					<ul class="submenu">
+						<li><a href="downloads/index.html">загрузка</a></li>
+						<li><a href="fnag-sdk/index.html">fnag-sdk</a></li>
+						<li><a href="https://github.com/nogai3/LighSync/issues">баг-трекер</a></li>
+					</ul>
+				</li>
+			</ul>
+			<script src="assets/js/list.js"></script>
+		</header>
 
-    <div class="footer">
-        <center>
-            <p>&copy; LighSync Games. 2023-2025.</p>
-        </center>
-    </div>
+		
+		<div class="text-container">
+			<h3>
+				LighSync Games - Основаные в 2023 мы пытаемся сделать игровой мир лучше. Возможно вы нас знаете по нашей
+				маленькой игре: GlackuS.
+			</h3>
+		</div>
+
+		<div class="content-section">
+			<div class="content-box">
+				<h2>Навигация по сайту</h2>
+				<p>
+					<nav>
+						<ul>
+							<li>Люди (авторы) - <a href="credits/index.html">здесь</a></li>
+							<li>Страница с загрузками - <a href="downloads/index.html">здесь</a></li>
+							<li>Посетить страницу FNAG-SDK - <a href="fnag-sdk/index.html">здесь</a></li>
+							<li>Наш баг-трекер на github - <a href="https://github.com/nogai3/LighSync/issues">здесь</a></li>
+							<li>Поиграть во FNAG в браузере - <a href="play/index.html">здесь</a></li>
+							<li>Профиль на github nogai3 (главный разработчик) - <a href="https://github.com/nogai3">тут</a></li>
+						</ul>
+					</nav>
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			&copy; Copyright. LighSync Games. 2023-2025. All right`s reserved.
+		</footer>
 </body>
 </html>

@@ -1,0 +1,247 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Comfortaa', sans-serif;
+	
+}
+
+/* Основной контейнер */
+container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;              /* Отступ сверху и снизу */
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Шапка */
+header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Логотип / заголовок */
+header h1 {
+    font-family: 'Krona One', monospace;
+    display: inline-block;
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Ссылки в шапке */
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+header a:hover {
+    color: #00afff;
+}
+
+header img:hover {
+	cursor: pointer;
+}
+
+/* Блок входа (левая колонка) */
+.login-section {
+    float: left;
+    width: 30%;
+    border: 1px dashed #00afff;
+    padding: 15px;
+    background-color: #222;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.login-section input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.login-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #00afff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-section button:hover {
+    background-color: #0088cc;
+}
+
+/* Блок контента (правая колонка) */
+.content-section {
+    width: 55%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.content-box {
+    align-items: center;
+    border: 1px solid #00afff;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    width: 105%;
+}
+
+/* Заголовок внутри блока контента */
+.content-box h2 {
+    background-color: #00afff;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+/* Кнопки в контенте */
+.content-box button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #00afff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.content-box button:hover {
+    background-color: #0088cc;
+}
+
+.content-box a {
+    text-decoration: none;
+    color: #00afff;
+}
+
+.content-box a:hover {
+    text-decoration: underline;
+    color: #0088cc;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#menu > li {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.submenu li a {
+    display: block;
+    padding: 5px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #00afff;
+}
+
+
+/* Подвал */
+footer {
+    clear: both; /* Чтобы подвал не «налезал» на плавающие колонки */
+    text-align: center;
+    padding: 15px;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+    border-radius: 5px;
+	margin-top: auto;
+    border-top: 3px solid var(--primary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    color: var(--accent-color);
+}
+
+footer a {
+    color: #00afff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
