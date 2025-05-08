@@ -146,6 +146,19 @@ header img:hover {
     width: 105%;
 }
 
+.content-box summary {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.content-box summary:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+
 /* Заголовок внутри блока контента */
 .content-box h2 {
     background-color: #00afff;
