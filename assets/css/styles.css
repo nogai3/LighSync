@@ -1,0 +1,362 @@
+@font-face {
+    font-family: 'mojang';
+    src: url('/assets/fonts/woff/mojang.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'faithful';
+    src: url('/assets/fonts/woff/faithful.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'minecraft-new';
+    src: url('/assets/fonts/woff/minecraft-new.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'minecraft-old';
+    src: url('/assets/fonts/woff/minecraft-old.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --lsync-core-green-6: #2A641C;
+    --lsync-core-green-5: #3C8527;
+    --lsync-core-green-4: #52A535;
+    --lsync-core-green-3: #6CC349;
+    --lsync-core-green-2: #86D562;
+    --lsync-core-green-1: #A0E081;
+    --lsync-core-grey-6: #262423;
+    --lsync-core-grey-5: #3D3938;
+    --lsync-core-grey-4: #6B6562;
+    --lsync-core-grey-3: #ABA09C;
+    --lsync-core-grey-2: #D0C5C0;
+    --lsync-core-grey-1: #EDE5E2;
+    --lsync-core-rich-black: #000;
+    --lsync-core-off-black: #171615;
+    --lsync-core-white: #fff;
+    --lsync-core-off-white: #FCF5F1;
+    --lsync-core-gradient-dark-grey: linear-gradient(180deg, #3D3938 0%, #262423 50%, #171615 100%);
+    --lsync-core-gradient-green: linear-gradient(180deg, #6CC349 0%, #52A535 50%, #3C8527 100%);
+    --lsync-core-gradient-light-grey: linear-gradient(180deg, #FCF5F1 0%, #EDE5E2 50%, #D0C5C0 100%);
+    --lsync-vanilla-green-6: #2A641C;
+    --lsync-vanilla-green-5: #3C8527;
+    --lsync-vanilla-green-4: #52A535;
+    --lsync-vanilla-green-3: #6CC349;
+    --lsync-vanilla-green-2: #86D562;
+    --lsync-vanilla-green-1: #A0E081;
+    --lsync-vanilla-brown-6: #492D1F;
+    --lsync-vanilla-brown-5: #66412C;
+    --lsync-vanilla-brown-4: #805539;
+    --lsync-vanilla-brown-3: #976746;
+    --lsync-vanilla-brown-2: #AD7A54;
+    --lsync-vanilla-brown-1: #C28E64;
+    --lsync-vanilla-blue-6: #002FAE;
+    --lsync-vanilla-blue-5: #0040C8;
+    --lsync-vanilla-blue-4: #0855DB;
+    --lsync-vanilla-blue-3: #1E6EEA;
+    --lsync-vanilla-blue-2: #3A87F4;
+    --lsync-vanilla-blue-1: #5B9FFB;
+    --lsync-vanilla-grey-6: #262423;
+    --lsync-vanilla-grey-5: #3D3938;
+    --lsync-vanilla-grey-4: #6B6562;
+    --lsync-vanilla-grey-3: #ABA09C;
+    --lsync-vanilla-grey-2: #D0C5C0;
+    --lsync-vanilla-grey-1: #EDE5E2;
+    --lsync-vanilla-coldgrey-6: #2C2F3A;
+    --lsync-vanilla-coldgrey-5: #3D4250;
+    --lsync-vanilla-coldgrey-4: #4D5466;
+    --lsync-vanilla-coldgrey-3: #5D647A;
+    --lsync-vanilla-coldgrey-2: #6C748C;
+    --lsync-vanilla-coldgrey-1: #8089A2;
+    --lsync-legends-light-blue-6: #339CD7;
+    --lsync-legends-light-blue-5: #39B9EB;
+    --lsync-legends-light-blue-4: #4AD5FF;
+    --lsync-legends-light-blue-3: #70DFFF;
+    --lsync-legends-light-blue-2: #95E8FF;
+    --lsync-legends-light-blue-1: #ACF2FF;
+    --lsync-legends-dark-blue-6: #001236;
+    --lsync-legends-dark-blue-5: #00215C;
+    --lsync-legends-dark-blue-4: #00337D;
+    --lsync-legends-dark-blue-3: #003BAB;
+    --lsync-legends-dark-blue-2: #005DCF;
+    --lsync-legends-dark-blue-1: #007FF2;
+    --lsync-legends-light-orange-6: #DE7523;
+    --lsync-legends-light-orange-5: #E89133;
+    --lsync-legends-light-orange-4: #F1AD42;
+    --lsync-legends-light-orange-3: #F6C25A;
+    --lsync-legends-light-orange-2: #FAD36F;
+    --lsync-legends-light-orange-1: #FDDF93;
+    --lsync-legends-ultra-dark-blue: #071927;
+    --lsync-legends-ultra-dark-orange: #271505;
+    --lsync-dungeons-orange-6: #DE5B0D;
+    --lsync-dungeons-orange-5: #FF791A;
+    --lsync-dungeons-orange-4: #FFA41F;
+    --lsync-dungeons-orange-3: #FFC42B;
+    --lsync-dungeons-orange-2: #FFD953;
+    --lsync-dungeons-orange-1: #FFF27A;
+    --lsync-dungeons-red-6: #8F1F0B;
+    --lsync-dungeons-red-5: #B42D10;
+    --lsync-dungeons-red-4: #DA3A16;
+    --lsync-dungeons-red-3: #FF481B;
+    --lsync-dungeons-red-2: #FF6D3A;
+    --lsync-dungeons-red-1: #FF925B;
+    --lsync-dungeons-mulberry-6: #190D19;
+    --lsync-dungeons-mulberry-5: #32122A;
+    --lsync-dungeons-mulberry-4: #4F1030;
+    --lsync-dungeons-mulberry-3: #530F33;
+    --lsync-dungeons-mulberry-2: #6C0E37;
+    --lsync-dungeons-mulberry-1: #7B0D3A;
+    --lsync-realms-deep-blue-7: #050029;
+    --lsync-realms-deep-blue-6: #0C0248;
+    --lsync-realms-deep-blue-5: #210A80;
+    --lsync-realms-deep-blue-4: #401CAC;
+    --lsync-realms-deep-blue-3: #643ACB;
+    --lsync-realms-deep-blue-2: #8D68E0;
+    --lsync-realms-deep-blue-1: #BCA4EC;
+    --lsync-realms-pink-6: #7F007A;
+    --lsync-realms-pink-5: #A40094;
+    --lsync-realms-pink-4: #D812B4;
+    --lsync-realms-pink-3: #E833C2;
+    --lsync-realms-pink-2: #F460D2;
+    --lsync-realms-pink-1: #FB95E2;
+    --lsync-marketplace-gold-6: #94540E;
+    --lsync-marketplace-gold-5: #B87918;
+    --lsync-marketplace-gold-4: #DB9F21;
+    --lsync-marketplace-gold-3: #FFC42B;
+    --lsync-marketplace-gold-2: #FFD953;
+    --lsync-marketplace-gold-1: #FFF27A;
+    --lsync-marketplace-grey-6: #262423;
+    --lsync-marketplace-grey-5: #3D3938;
+    --lsync-marketplace-grey-4: #6B6562;
+    --lsync-marketplace-grey-3: #ABA09C;
+    --lsync-marketplace-grey-2: #D0C5C0;
+    --lsync-marketplace-grey-1: #EDE5E2;
+    --lsync-default-focus: #1157BE;
+    --lsync-default-caution: #E2B923;
+    --lsync-default-warning: #CA3636;
+    --lsync-default-warning-2: #FF605E;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--lsync-core-grey-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(8px); /* Размытие фона */
+    -webkit-backdrop-filter: blur(8px); /* Safari поддержка */
+    /* padding: 0 30px; */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* слева по умолчанию */
+}
+
+.header-center {
+    justify-content: center;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+
+.header-logo {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--lsync-core-white);
+}
+
+.header-links a {
+    font-family: 'minecraft-old';
+    padding-top: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: var(--lsync-core-white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header-links a:hover {
+    text-decoration: underline;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    background-color: var(--lsync-core-off-black);
+    color: var(--lsync-core-white);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    width: 100%;
+    height: 932px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-main {
+    font-family: 'minecraft-old';
+    background-size: cover;
+    background-position: center;
+    height: calc(100% - 120px);
+    display: flex;
+    align-items: flex-end;
+    padding-left: 60px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.slider-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    max-width: 600px;
+    border-left: 5px solid var(--lsync-vanilla-green-4);
+}
+
+.slider-content-h1 {
+    font-family: 'minecraft-old';
+}
+
+.slider-btn {
+    font-family: 'minecraft-old';
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--lsync-vanilla-green-4);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slider-btn:hover {
+    background-color: var(--lsync-vanilla-green-6);
+}
+
+.slider-thumbs {
+    display: flex;
+    gap: 10px;
+    /* background-color: #111; */
+    padding: 10px;
+    justify-content: flex-end;
+}
+
+.slider-thumbs img {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.slider-thumbs img.active {
+    border: 2px solid var(--lsync-vanilla-green-4);
+}
+
+.main {
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.main-h1 {
+    font-family: 'minecraft-new';
+    font-size: 56px;
+    margin: 0;
+}
+
+.main a {
+    font-size: 20px;
+    font-family: 'minecraft-old', serif;
+    text-decoration: none;
+    margin: 0;
+    color: var(--lsync-vanilla-green-4);
+}
+
+.main a:hover {
+    color: var(--lsync-vanilla-green-6);
+    text-decoration: underline;
+}
+
+.game-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.bundle-link {
+    color: #90ee90;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.bundle-link a {
+    color: #90ee90;
+    text-decoration: underline;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background-color: #1b1b1b;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.game-card img {
+    width: 610px;
+    height: 640px;
+    border-radius: 4px;
+}
+
+.game-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.game-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+footer {
+    height: 60px;
+    background-color: var(--lsync-core-grey-6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

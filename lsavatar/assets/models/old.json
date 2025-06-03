@@ -1,0 +1,33 @@
+{
+  "head": {
+    "size": [1, 1, 1],
+    "position": [0, 1.5, 0],
+    "color": "#ffdbac",
+    "texture": "textures/face.png"
+  },
+  "body": {
+    "size": [1, 1.5, 0.5],
+    "position": [0, 0, 0],
+    "color": "#ff0000"
+  },
+  "leftArm": {
+    "size": [0.3, 1, 0.3],
+    "position": [-0.65, 0.5, 0],
+    "color": "#ffdbac"
+  },
+  "rightArm": {
+    "size": [0.3, 1, 0.3],
+    "position": [0.65, 0.5, 0],
+    "color": "#ffdbac"
+  },
+  "leftLeg": {
+    "size": [0.4, 1, 0.4],
+    "position": [-0.3, -1.25, 0],
+    "color": "#0000ff"
+  },
+  "rightLeg": {
+    "size": [0.4, 1, 0.4],
+    "position": [0.3, -1.25, 0],
+    "color": "#0000ff"
+  }
+}

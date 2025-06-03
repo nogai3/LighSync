@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced 3D Mojavatar Creator</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Advanced 3D Mojavatar Creator</h1>
+    <div id="avatarCanvas" class="avatar-canvas"></div>
+
+    <div class="camera-controls">
+        <h3>Camera Position</h3>
+        <label>Camera X:</label>
+        <input type="range" id="cameraX" min="-10" max="10" value="0" oninput="updateCamera()">
+        <label>Camera Y:</label>
+        <input type="range" id="cameraY" min="-10" addShirtmax="10" value="0" oninput="updateCamera()">
+        <label>Camera Z:</label>
+        <input type="range" id="cameraZ" min="1" max="10" value="5" oninput="updateCamera()">
+    </div>
+
+    <div class="controls">
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('hair')">Hair</button>
+            <button class="tab-button" onclick="openTab('face')">Face</button>
+            <button class="tab-button" onclick="openTab('top')">Top</button>
+            <button class="tab-button" onclick="openTab('bottom')">Bottom</button>
+        </div>
+
+        <div id="hair" class="tab-content active">
+            <h3>Hair/Hat</h3>
+            <select id="hatStyle" onchange="updateHat(this.value)">
+                <option value="none">None</option>
+                <option value="wizard">Wizard Hat</option>
+                <option value="cap">Cap</option>
+            </select>
+        </div>
+
+        <div id="face" class="tab-content">
+            <h3>Face</h3>
+            <select id="faceStyle" onchange="updateFace(this.value)">
+                <option value="none">None</option>
+                <option value="default">Default Face</option>
+            </select>
+        </div>
+
+        <div id="top" class="tab-content">
+            <h3>Top</h3>
+            <label>Shirt Color:</label>
+            <input type="color" id="shirtColor" value="#ff0000" onchange="updateShirt(this.value)">
+        </div>
+
+        <div id="bottom" class="tab-content">
+            <h3>Bottom</h3>
+            <label>Pants Color:</label>
+            <input type="color" id="pantsColor" value="#0000ff" onchange="updatePants(this.value)">
+        </div>
+
+        <div class="bg-control">
+            <h3>Background Color</h3>
+            <input type="color" id="bgColor" value="#ffffff" onchange="updateBackground()">
+        </div>
+
+        <button onclick="downloadAvatar()">Download Avatar</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

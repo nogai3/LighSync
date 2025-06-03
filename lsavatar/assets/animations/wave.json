@@ -1,0 +1,16 @@
+{
+  "name": "wave",
+  "duration": 2,
+  "bones": {
+    "rightArm": [
+      { "time": 0, "rotation": [0, 0, 0] },
+      { "time": 1, "rotation": [0, 0, -Math.PI / 4] },
+      { "time": 2, "rotation": [0, 0, 0] }
+    ],
+    "leftArm": [
+      { "time": 0, "rotation": [0, 0, 0] },
+      { "time": 1, "rotation": [0, 0, Math.PI / 4] },
+      { "time": 2, "rotation": [0, 0, 0] }
+    ]
+  }
+}
