@@ -260,5 +260,4 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-// Инициализация сцены
 init();
