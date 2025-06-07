@@ -1,7 +1,7 @@
 let scene, camera, renderer, avatar;
 let currentAnimation = null;
 let animationStartTime = 0;
-// JSON для анимации прыжка
+
 const jumpAnimation = {
     name: "jump",
     duration: 1,
@@ -14,7 +14,6 @@ const jumpAnimation = {
     }
 };
 
-// JSON для шапок (добавим больше стилей)
 const hatModels = {
     wizard: {
         geometry: "cone",
@@ -36,7 +35,6 @@ const hatModels = {
     }
 };
 
-// API для управления аватаром
 const AvatarAPI = {
     hat: null,
     face: null,
@@ -71,7 +69,6 @@ const AvatarAPI = {
             this.face = null;
         }
         if (faceType === 'default') {
-            // Здесь можно добавить текстуру лица
             const texture = new THREE.TextureLoader().load('assets/models/textures/face.png');
             head.material.map = texture;
         }
@@ -81,8 +78,6 @@ const AvatarAPI = {
     addEyesElement(eyesType) {
         const head = avatar.children.find(child => child.name === 'head');
         if (eyesType === 'default') {
-            // Здесь можно добавить текстуру глаз (накладываем на переднюю грань головы)
-            // Для примера просто меняем цвет
             head.material.color.set(0xffdbac);
         }
         playAnimation(Date.now() / 1000, jumpAnimation);
@@ -91,7 +86,6 @@ const AvatarAPI = {
     addMouthElement(mouthType) {
         const head = avatar.children.find(child => child.name === 'head');
         if (mouthType === 'default') {
-            // Здесь можно добавить текстуру рта
             head.material.color.set(0xffdbac);
         }
         playAnimation(Date.now() / 1000, jumpAnimation);
@@ -113,42 +107,34 @@ const AvatarAPI = {
 };
 
 function init() {
-    // Создаем сцену
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(400, 400);
     document.getElementById('avatarCanvas').appendChild(renderer.domElement);
 
-    // Начальная позиция камеры
     camera.position.set(0, 0, 5);
-
-    // Добавляем свет
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
     directionalLight.position.set(0, 1, 1);
     scene.add(directionalLight);
 
-    // Создаем аватар (блочная модель с пропорциями Mojavatar)
     avatar = new THREE.Group();
 
-    // Голова (8x8x8 вокселей, масштабируем для Three.js)
-    const headGeometry = new THREE.BoxGeometry(1, 1, 1); // 8x8x8 в воксельной системе
+    const headGeometry = new THREE.BoxGeometry(1, 1, 1);
     const headMaterial = new THREE.MeshBasicMaterial({ color: 0xffdbac });
     const head = new THREE.Mesh(headGeometry, headMaterial);
     head.position.y = 1.5;
     head.name = 'head';
     avatar.add(head);
 
-    // Тело (8x12x4 вокселя)
     const bodyGeometry = new THREE.BoxGeometry(1, 1.5, 0.5); // 8x12x4
     const bodyMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
     const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
     body.name = 'body';
     avatar.add(body);
 
-    // Руки (4x12x4 вокселя)
     const armGeometry = new THREE.BoxGeometry(0.5, 1.5, 0.5); // 4x12x4
     const leftArm = new THREE.Mesh(armGeometry, new THREE.MeshBasicMaterial({ color: 0xffdbac }));
     leftArm.position.set(-0.75, 0.75, 0); // Смещаем влево
@@ -160,7 +146,6 @@ function init() {
     rightArm.name = 'rightArm';
     avatar.add(rightArm);
 
-    // Ноги (4x12x4 вокселя)
     const legGeometry = new THREE.BoxGeometry(0.5, 1.5, 0.5); // 4x12x4
     const leftLeg = new THREE.Mesh(legGeometry, new THREE.MeshBasicMaterial({ color: 0x0000ff }));
     leftLeg.position.set(-0.25, -0.75, 0); // Смещаем влево
@@ -173,8 +158,6 @@ function init() {
     avatar.add(rightLeg);
 
     scene.add(avatar);
-
-    // Начальная анимация
     animate();
 }
 
