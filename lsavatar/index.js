@@ -1,7 +1,6 @@
 let scene, camera, renderer, avatar;
 let currentAnimation = null;
 let animationStartTime = 0;
-console.log("Putin");
 // JSON для анимации прыжка
 const jumpAnimation = {
     name: "jump",
