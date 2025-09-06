@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/images/lighsync128x128.png" alt="Логотип">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="about/index.html">О нас</a></li>
+        <li><a href="credits/index.html">Авторы</a></li>
+        <li><a href="downloads/index.html">Загрузки</a></li>
+        <li><a href="sdk/index.html">LighSync SDK</a></li>
+        <li><a href="donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <section class="intro">
+      <h3>LighSync Games — Основанные в 2023, мы пытаемся сделать игровой мир лучше. Возможно, вы знаете нас по нашей маленькой серии игр: GlackuS.</h3>
+    </section>
+
+    <section class="card">
+      <h2>Навигация по сайту</h2>
+      <ul>
+        <li>Люди (авторы) — <a href="credits/index.html">здесь</a></li>
+        <li>О нас можно прочитать — <a href="about/index.html">здесь</a></li>
+        <li>Загрузки — <a href="downloads/index.html">здесь</a></li>
+        <li>LighSync Games SDK — <a href="sdk/index.html">здесь</a></li>
+        <li>Наш баг-трекер — <a href="https://github.com/LighSync/issues">здесь</a></li>
+        <li>Сыграть во FNAG в браузере — <a href="play/index.html">здесь</a></li>
+        <li>Поддержать нас можно — <a href="donate/index.html">здесь</a></li>
+        <li>Профиль GitHub (nogai3) — <a href="https://github.com/nogai3">тут</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

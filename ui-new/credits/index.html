@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/lighsync128x128.png" alt="Логотип" onclick="window.location.href = '../index.html';">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../about/index.html">О нас</a></li>
+        <li><a href="#">Авторы</a></li>
+        <li><a href="../downloads/index.html">Загрузки</a></li>
+        <li><a href="../sdk/index.html">LighSync SDK</a></li>
+        <li><a href="../donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <section class="intro">
+        <h3>Люди (авторы)</h3>
+    </section>
+    
+    <section class="card">
+        <h2>Авторы и их проекты</h2>
+        <ul>
+            <li>
+                Глеб Устименко (nogai3, glackus) - основатель, разработчик, художник, музыкант. Проекты: FNAG, 25w14milk, GS1/2, LighSync SDK, LighSync Gemini.
+            </li>
+            <li>
+                Злата Устименко (wandarmo) - дизайнер, художник. Проекты: FNAG, 25w14milk, GS1/2
+            </li>
+            <li>
+                Платон Унтеров (kartoha) - со-основатель, дизайнер, художник, музыкант, тестировщик. Проекты: FNAG, 25w14milk, GS1/2
+            </li>
+            <li>
+                Константин Фадеев (KAPITANKASTET) - со-основатель, дизайнер, художник, тестировщик. Проекты: FNAG, 25w14milk
+            </li>
+        </ul>
+    </section>
+    <section class="card">
+        <h2>ПО и библиотеки использованные в проектах LighSync</h2>
+        <ul>
+            <li>
+                Clickteam Fusion 2.5 (Clickteam, LLC) - <a href="https://www.clickteam.com">ссылка</a>
+            </li>
+            <li>
+                Github, Git (Github, Inc.) - <a href="https://github.com">ссылка</a>
+            </li>
+            <li>
+                Java (Sun Microsystems) - <a href="https://www.java.com">ссылка</a>
+            </li>
+            <li>
+                Google GenAI (Google, Inc) - <a href="https://github.com/googleapis/java-genai">ссылка</a>
+            </li>
+            <li>
+                Google GSON (Google, Inc) - <a href="https://github.com/google/gson">ссылка</a>
+            </li>
+            <li>
+                LanguaggerAPI (LighSync Games) - <a href="https://github.com/lighsync/languagger">ссылка</a>
+            </li>
+            <li>
+                LighSync Level Provider (LighSync Games) - <a href="#">нету ссылки :(</a>
+            </li>
+            <li>
+                LighSync StopSave (LighSync Games) - <a href="#">нету ссылки :(</a>
+            </li>
+        </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

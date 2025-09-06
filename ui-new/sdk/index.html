@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/lighsync128x128.png" alt="Логотип" onclick="window.location.href = '../index.html';">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../about/index.html">О нас</a></li>
+        <li><a href="../credits/index.html">Авторы</a></li>
+        <li><a href="../downloads/index.html">Загрузки</a></li>
+        <li><a href="#">LighSync SDK</a></li>
+        <li><a href="../donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <section class="intro">
+        <section class="card">
+            <h2>LighSync Games SDK</h2>
+            <ul>
+                <li>Загрузить NightPack-API (1.0 | FNAG 1.5.x, 1.6.x) для FNAG - <a href="../../assets/fnagsdk/nightpack-api/nightpack-api-1.0.nightpack" download>тут!</a></li>
+                <br>
+                <li>Но что значат все эти слова? - <a href="howitworks.html">здесь</a> мы всё расписали!</li>
+            </ul>
+        </section>
+    </section>
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
