@@ -1,0 +1,14 @@
+{
+    "formatVersion": 1,
+    "name": "Minecraft",
+    "uid": "net.minecraft",
+    "versions": [
+        {
+            "recommended": "true",
+            "releaseTime": "2025-09-07T19:54:49.921569",
+            "sha256": "c5af44e8288aa19a26c16ff91be93350b2b8e79d70118677d582405aed847713",
+            "type": "snapshot",
+            "version": "25w14milk"
+        }
+    ]
+}
