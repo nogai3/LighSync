@@ -5,7 +5,7 @@
     ],
     "assetIndex": {
         "id": "26",
-        "sha1": "a5d49a1ed6bb6098770c4969de9f4fcc7f98a3afaae516b4ac6554be4290d9cd",
+        "sha1": "622a5942a0ab02f8d4af602a214be18791b40eb2",
         "size": 601851,
         "totalSize": 432043301,
         "url": "https://nogai3.github.io/LighSync/assets/25w14milk/backend/game-assets/indexes/26.json"
@@ -1726,7 +1726,7 @@
     "mainJar": {
         "downloads": {
             "artifact": {
-                "sha1": "60937ed494cd02f6029a611e42a791332cce244b0479b7d8fdff2968eafcbcbd",
+                "sha1": "5197a7ced34504235f63a833e0b77e5a7645da84",
                 "size": 36361296,
                 "url": "https://nogai3.github.io/LighSync/assets/25w14milk/backend/game-assets/jars/client.jar"
             }
