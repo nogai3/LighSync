@@ -5,10 +5,10 @@
     ],
     "assetIndex": {
         "id": "26",
-        "sha1": "60eae637445c1e038915118b883757481f25a13c",
-        "size": 491076,
-        "totalSize": 434468948,
-        "url": "https://piston-meta.mojang.com/v1/packages/60eae637445c1e038915118b883757481f25a13c/26.json"
+        "sha1": "622a5942a0ab02f8d4af602a214be18791b40eb2",
+        "size": 601851,
+        "totalSize": 432043301,
+        "url": "https://nogai3.github.io/LighSync/assets/25w14milk/backend/meta/packages/622a5942a0ab02f8d4af602a214be18791b40eb2/26.json"
     },
     "formatVersion": 1,
     "libraries": [{
