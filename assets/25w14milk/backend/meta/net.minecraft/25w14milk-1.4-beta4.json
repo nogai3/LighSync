@@ -1,0 +1,31 @@
+{
+    "+traits": [
+        "XR:Initial",
+        "FirstThreadOnMacOS"
+    ],
+    "assetIndex": {
+        "id": "26",
+        "sha1": "",
+        "size": 999,
+        "totalSize": 999,
+        "url": ""
+    },
+    "formatVersion": 1,
+    "libraries": [{}],
+    "mainJar": {
+        "downloads": {
+            "artifact": {
+                "sha1": "",
+                "size": 999,
+                "url": "https://nogai3.github.io/LighSync/assets/25w14milk/backend/game-assets/jars/1.4-beta4/client.jar"
+            }
+        },
+        "name": "com.mojang:minecraft:25w14milk:client"
+    },
+    "minecraftArguments": "--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --versionType ${version_type}",
+    "name": "Minecraft",
+    "releaseTime": "",
+    "type": "snapshot",
+    "uid": "net.minecraft",
+    "version": "25w14milk-"
+}
