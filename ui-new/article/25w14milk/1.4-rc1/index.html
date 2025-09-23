@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../../../assets/images/lighsync128x128.png" alt="Логотип">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Авторы</a></li>
+        <li><a href="#">Загрузки</a></li>
+        <li><a href="#">LighSync SDK</a></li>
+        <li><a href="#">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <section class="intro">
+        <section class="news">
+            <img src="../../../assets/images/25w14milklogo.png">
+            <p>Новости</p>
+        </section>
+        <section class="layout">
+            <aside class="sidebar">
+                <img src="../../../assets/images/glackus-avatar2.png" alt="glackus" width="185px" height="155px">
+                <p><strong>Написано</strong><br>glackus</p>
+                <p><strong>Опубликовано</strong><br>24.09.2025</p>    
+            </aside>
+            <section class="content">
+                <h1>Minecraft 25w14milk | 1.4 | Release Candidate 1</h1>
+                <p>
+                    Баги и оптимизация:<br>
+                    1. Исправлено нанесение урона хлебного меча<br>
+                    2. Исправлен баг когда одна текстура накладывалась на другую в оверлее загрузки игры<br>
+                    3. Блок Джеба был значительно оптимизирован<br><br><hr><br>
+                    
+                    Нововведения:<br>
+                    1. Частично были возвращены достижения<br>
+                    2. Добавлена система безопасности шифрования API ключей
+                </p>
+            </section>
+        </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
