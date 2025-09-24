@@ -1,7 +1,9 @@
 {
     "+traits": [
         "XR:Initial",
-        "FirstThreadOnMacOS"
+        "FirstThreadOnMacOS",
+        "feature:is_quick_play_singleplayer",
+        "feature:is_quick_player_multiplayer"
     ],
     "assetIndex": {
         "id": "26",
@@ -10,6 +12,10 @@
         "totalSize": 434477187,
         "url": "https://nogai3.github.io/LighSync/assets/25w14milk/backend/meta/packages/5777f956fef608c3c0960932d925bfae6c4e1d91/26.json"
     },
+    "compatibleJavaMajors": [
+        21
+    ],
+    "compatibleJavaName": "java-runtime-delta",
     "formatVersion": 1,
     "libraries": [{
         "downloads": {
@@ -1735,7 +1741,14 @@
     },
     "minecraftArguments": "--username ${auth_player_name} --version ${version_name} --gameDir ${game_directory} --assetsDir ${assets_root} --assetIndex ${assets_index_name} --uuid ${auth_uuid} --accessToken ${auth_access_token} --versionType ${version_type}",
     "name": "Minecraft",
+    "order": -2,
     "releaseTime": "2025-09-07T19:54:49.921569",
+    "requires": [
+        {
+            "suggests": "3.3.3",
+            "uid": "org.lwjgl3"
+        }
+    ],
     "type": "snapshot",
     "uid": "net.minecraft",
     "version": "25w14milk-1.4-rc1"
