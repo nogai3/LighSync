@@ -139,6 +139,13 @@ body {
   gap: 20px;
 }
 
+.layout1 {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  justify-content: end; /* сетка прижимается к правому краю */
+  gap: 20px;
+}
+
 .sidebar {
   text-align: center;
   font-size: 14px;

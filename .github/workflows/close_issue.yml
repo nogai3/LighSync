@@ -1,16 +1,16 @@
 name: Auto Close Bug Issues
 
 on:
-  workflow_dispatch:  # Запуск вручную
+  workflow_dispatch:
   issues:
-    types: [labeled]  # Запуск при добавлении метки
+    types: [labeled]
 
 jobs:
   close-bug:
     runs-on: ubuntu-latest
     steps:
       - name: Check Label
-        if: contains(github.event.issue.labels.*.name, 'fixed')  # Если метка "fixed"
+        if: contains(github.event.issue.labels.*.name, 'fixed')
         run: |
           curl -X PATCH -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
