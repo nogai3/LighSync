@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Команда</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+  <style>
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .team-card {
+      background: #2b2b2b;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0,175,255,0.4);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 2px solid #00afff;
+    }
+
+    .team-card h3 {
+      color: #00afff;
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .team-card p {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .role {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .site-footer {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/lighsync128x128.png" alt="Логотип" onclick="window.location.href = '../index.html';">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../about/index.html">О нас</a></li>
+        <li><a href="#">Команда</a></li>
+        <li><a href="../downloads/index.html">Загрузки</a></li>
+        <li><a href="../sdk/index.html">LighSync SDK</a></li>
+        <li><a href="../donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <h1>Команда LighSync Games</h1>
+    <p class="intro">Мы — небольшая, но амбициозная команда, объединённая идеей создавать игры, технологии и вдохновение.</p>
+
+    <div class="team-container">
+
+      <div class="team-card" onclick="window.location.href='leadership/glackus/index.html'">
+        <img src="../assets/images/team/glackus.jpg" alt="Глеб Устименко">
+        <h3>Глеб Устименко</h3>
+        <p class="role">Основатель / Главный разработчик</p>
+        <p>Создаёт архитектуру, пишет код, вдохновляет. Двигает вперёд идею LighSync с первого дня.</p>
+      </div>
+
+      <div class="team-card" onclick="window.location.href='leadership/kartoha/index.html'">
+        <img src="../assets/images/team/kartoha.jpg" alt="Платон Унтеров">
+        <h3>Платон Унтеров</h3>
+        <p class="role">Со-основатель / Вице-Президент / Музыкант и звукорежисёр</p>
+        <p>Помогает с проектными решениями и разработкой. А также создаёт замечательную музыку и звуковые эффекты</p>
+      </div>
+
+      <div class="team-card" onclick="window.location.href='leadership/kapitankastet/index.html'">
+        <img src="../assets/images/team/kapitankastet.jpg" alt="Константин Фадеев">
+        <h3>Константин Фадеев</h3>
+        <p class="role">Со-основатель / Геймдизайнер / Тестировщик</p>
+        <p>Следит за игровыми механиками и атмосферой. Видит детали, которые другие пропускают.</p>
+      </div>
+
+      <div class="team-card" onclick="window.location.href='leadership/wandarmo/index.html'">
+        <img src="../assets/images/team/wandarmo.jpg" alt="Злата Устименко">
+        <h3>Злата Устименко</h3>
+        <p class="role">Дизайнер</p>
+        <p>Отвечает за визуальную магию. Каждая кнопка и каждая тень проходят через её вдохновение.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023–2025 LighSync Games. Все права защищены. |
+      <a href="../index.html">Русский</a> | <a href="../en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

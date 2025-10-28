@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/lighsync128x128.png" alt="Логотип" onclick="window.location.href = '../index.html';">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">О нас</a></li>
+        <li><a href="../team/index.html">Команда</a></li>
+        <li><a href="../downloads/index.html">Загрузки</a></li>
+        <li><a href="../sdk/index.html">LighSync SDK</a></li>
+        <li><a href="../donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <h1>🎮 LighSync Games - когда идеи обретают форму</h1>
+    <h3>
+      LighSync Games - это не просто студия. Это место, где шуточные идеи становятся легендами, а эксперименты превращаются
+      в целые миры. Мы создаём игры не ради трендов и не ради громких названий - а ради чувства, когда игра вдруг оживает
+      под пальцами и начинает говорить с тобой на своём языке.
+    </h3>
+    <h3>
+      Основанные в 2023 году, мы начали с хохота, багов и чистого вдохновения. И с тех пор не перестаём искать баланс между
+      игрой и искусством, кодом и воображением, хаосом и красотой. Наши проекты - это отражение нашей души: иногда странные,
+      иногда глубокие, но всегда искренние.
+    </h3>
+    <h1>⚙️ Наш подход</h1>
+    <h3>
+      Мы не боимся экспериментировать: 
+      Создаём собственные движки (<a href="https://github.com/nogai3/gs3d" style="color: #00afff; text-decoration: none;">GS3D</a>), инструменты и SDK, чтобы воплотить наши идеи в жизнь. Модифицируем старые игры, чтобы вдохнуть в них новую жизнь.
+
+      Каждый проект для нас - это лаборатория идей, где шутка может стать технологией, а ошибка - новой возможностью.
+    </h3>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

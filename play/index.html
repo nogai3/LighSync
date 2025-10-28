@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/lighsync128x128.png" alt="Логотип" onclick="window.location.href = '../index.html';">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../about/index.html">О нас</a></li>
+        <li><a href="../team/index.html">Команда</a></li>
+        <li><a href="../downloads/index.html">Загрузки</a></li>
+        <li><a href="../sdk/index.html">LighSync SDK</a></li>
+        <li><a href="../donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <style>
+      .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .team-card {
+        background: #2b2b2b;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0,175,255,0.4);
+      }
+
+      .team-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 2px solid #00afff;
+      }
+
+      .team-card h3 {
+        color: #00afff;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+
+      .team-card p {
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      .role {
+        font-size: 13px;
+        color: #999;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .site-footer {
+        margin-top: 50px;
+      }
+    </style>
+    <h1>Поиграть во FNAG прямо в браузере!</h1>
+    <div class="team-container">
+      <div class="team-card" onclick="window.location.href = 'game/160/index.html'">
+        <img src="../assets/images/projects/fnag_logo1.png" alt="FNAG Logo" class="glackus">
+        <h3>Five Nights at Glackus 1.6</h3>
+      </div>
+      <div class="team-card" onclick="window.location.href = 'game/153/index.html'">
+        <img src="../assets/images/projects/fnag_logo1.png" alt="FNAG Logo" class="glackus">
+        <h3>Five Nights at Glackus 1.5.3</h3>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+
+    const images = document.querySelectorAll('.glackus');
+    const img1 = "../assets/images/projects/fnag_logo1.png";
+    const img2 = "../assets/images/projects/fnag_logo2.png";
+
+    let showingFirst = true;
+
+    setInterval(() => {
+      images.forEach(img => {
+        img.src = showingFirst ? img2 : img1;
+      });
+      showingFirst = !showingFirst;
+    }, 1500);
+  </script>
+</body>
+</html>

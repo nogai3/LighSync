@@ -1,8 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;v1/index.html">
-    <title>LighSync Games | BPage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/index.css">
 </head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="assets/images/lighsync128x128.png" alt="Логотип">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="about/index.html">О нас</a></li>
+        <li><a href="team/index.html">Команда</a></li>
+        <li><a href="downloads/index.html">Загрузки</a></li>
+        <li><a href="sdk/index.html">LighSync SDK</a></li>
+        <li><a href="donate/index.html">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <style>
+      .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .team-card {
+        background: #2b2b2b;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0,175,255,0.4);
+      }
+
+      .team-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 2px solid #00afff;
+      }
+
+      .team-card h3 {
+        color: #00afff;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+
+      .team-card p {
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      .role {
+        font-size: 13px;
+        color: #999;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .site-footer {
+        margin-top: 50px;
+      }
+    </style>
+    <h1>Добро пожаловать в LighSync Games</h1>
+    <h2>Мы создаём миры, в которых хочется остаться</h2>
+    <h3>Независимая студия разработчиков основанная в 2023 году, объединённая одной идеей - оживить мечты игроков</h3>
+    <h3>Познакомься с нашими играми и игровыми решениями:</h3>
+    <div class="team-container">
+      <div class="team-card">
+        <img src="assets/images/projects/fnag_logo1.png" alt="FNAG Logo" class="glackus">
+        <h3>Five Nights at Glackus</h3>
+        <p class="role">Хоррор, Point and Click, Программирование, Образование</p>
+        <p>
+          Five Nights at Glackus (FNAG) игра в жанре хоррор и в сеттинге культовой FNAF.
+          Спаситесь от врагов, используя ограниченные ресурсы и узнайте правду Стива Глэкуса!
+          Игра поддерживает возможность программирования её логики, а также создания собственных уровней и контента.
+          Что можно использовать в образовательных целях для изучения основ программирования и гейм-дизайна.
+        </p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/legacy/bg_top.png" alt="25w14milk Logo">
+        <h3>Minecraft 25w14milk</h3>
+        <p class="role">Песочница, Выживание</p>
+        <p>
+          Наш собственный перво-апрельский снапшот для Minecraft Java Edition.
+          Наше видение того, каким мог бы быть Minecraft, если бы в него добавили больше веселья и странностей.
+          Исследуйте новые механики, блоки и сущности, которые добавляют уникальный опыт в классическую игру.
+        </p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/legacy/bg_main.png" alt="EOD Logo">
+        <h3>Edge of Despair</h3>
+        <p class="role">Выживание, Хоррор, Песочница</p>
+        <p>
+          Игра в сеттинге Minecraft, сочетающая элементы выживания и хоррора.
+          Исследуйте мрачный мир, собирайте ресурсы и сражайтесь с опасностями, чтобы выжить в этом захватывающем приключении.
+        </p>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/projects/fnag_logo1.png" alt="GS1 Logo" class="glackus">
+        <h3>GlackuS 1</h3>
+        <p class="role">Платформер, Приключение, Хоррор</p>
+        <p>
+          Классическая игра-платформер с элементами приключения и хоррора.
+          Помогите Адрианно "Врапперу" Грассо преодолеть опасные уровни, избегая ловушек и врагов, чтобы раскрыть тайны Стива Глэкуса.
+      </div>
+      <div class="team-card">
+        <img src="assets/images/projects/fnag_logo1.png" alt="GS2 Logo" class="glackus">
+        <h3>GlackuS 2</h3>
+        <p class="role">Открытый мир, RPG, Приключение, Хоррор</p>
+        <p>
+          Игра в сеттинге Genshin Impact с открытым миром, RPG и элементами хоррора.
+          Исследуйте захватывающий мир, выполняйте задания и сражайтесь с врагами, чтобы раскрыть тайны 
+          Стива Глэкуса и наконец расправится с его злом.
+      </div>
+      <div class="team-card">
+        <img src="assets/images/projects/gemini.png" alt="Gemini Logo">
+        <h3>LighSync Gemini</h3>
+        <p class="role">AI</p>
+        <p>
+          Нейросетевой помощник основанный на Google Gemini, способный помогать в создании игр, написании кода и генерации контента.
+          Интегрируется с Minecraft 25w14milk, а в скором времени и с другими нашими проектами.
+      </div>
+      <div class="team-card">
+        <img src="assets/images/projects/stopsave.png" alt="StSv Logo">
+        <h3>LighSync StopSave</h3>
+        <p class="role">Сохранения в играх</p>
+        <p>
+          Система сохранения прогресса в играх, позволяющая игрокам сохранять и загружать свои достижения.
+          Поддерживает различные игры и платформы, обеспечивая удобство и безопасность сохранений.
+          Также включает в себя облачное хранение и синхронизацию между устройствами с помощью LighSync Games API.
+      </div>
+      <div class="team-card">
+        <img src="assets/images/projects/levelprovider.png" alt="LevelProvider Logo">
+        <h3>LighSync Level Provider</h3>
+        <p class="role">Создание уровней</p>
+        <p>
+          API для создания уровней для FNAG и GS1, позволяющее 
+          разработчикам и игрокам создавать и делиться своими собственными уровнями.
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+    const images = document.querySelectorAll('.glackus');
+    const img1 = "assets/images/projects/fnag_logo1.png";
+    const img2 = "assets/images/projects/fnag_logo2.png";
+
+    let showingFirst = true;
+
+    setInterval(() => {
+      images.forEach(img => {
+        img.src = showingFirst ? img2 : img1;
+      });
+      showingFirst = !showingFirst;
+    }, 1500);
+  </script>
+</body>
 </html>

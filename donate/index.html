@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LighSync Games | Добро пожаловать!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles/index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <img src="../assets/images/lighsync128x128.png" alt="Логотип" onclick="window.location.href = '../index.html';">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../about/index.html">О нас</a></li>
+        <li><a href="../team/index.html">Команда</a></li>
+        <li><a href="../downloads/index.html">Загрузки</a></li>
+        <li><a href="../sdk/index.html">LighSync SDK</a></li>
+        <li><a href="#">Поддержать нас</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <main class="main-content">
+    <style>
+      .team-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .team-card {
+        background: #2b2b2b;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0,0,0,0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+
+      .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0,175,255,0.4);
+      }
+
+      .team-card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 2px solid #00afff;
+      }
+
+      .team-card h3 {
+        color: #00afff;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+
+      .team-card p {
+        font-size: 14px;
+        color: #ccc;
+      }
+
+      .role {
+        font-size: 13px;
+        color: #999;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .site-footer {
+        margin-top: 50px;
+      }
+
+      dialog {
+        border: none;
+        border-radius: 15px;
+        background: #1e1e1e;
+        color: #fff;
+        padding: 25px 30px;
+        max-width: 420px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0 0 25px rgba(0,175,255,0.5);
+        font-family: 'Inter', sans-serif;
+        animation: dialogFade 0.3s ease;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(5px);
+      }
+
+      dialog h3 {
+        color: #00afff;
+        margin-bottom: 15px;
+        text-shadow: 0 0 8px #00afff;
+      }
+
+      dialog a {
+        display: block;
+        color: #00afff;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 8px 0;
+        transition: color 0.3s ease, transform 0.2s ease;
+      }
+
+      dialog a:hover {
+        color: #33cfff;
+        transform: scale(1.05);
+      }
+
+      dialog p {
+        color: #bbb;
+        font-size: 14px;
+        margin: 15px 0;
+      }
+
+      dialog button {
+        background: transparent;
+        border: 2px solid #ff3c3c;
+        color: #ff3c3c;
+        border-radius: 10px;
+        padding: 8px 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+
+      dialog button:hover {
+        background: #ff3c3c;
+        color: #111;
+        box-shadow: 0 0 10px #ff3c3c;
+      }
+
+      @keyframes dialogFade {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -45%) scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    </style>
+    <h1>Поддержать LighSync Games</h1>
+    <h2>
+      Если вам нравятся наши игры и вы хотите поддержать нас в создании еще большего количества увлекательного контента, 
+      вы можете сделать это несколькими способами:
+    </h2>
+    <div class="team-container">
+      <div class="team-card" onclick="window.location.href =  'https://www.donationalerts.com/r/nogai3_lighsync'">
+        <img src="../assets/images/donate/donationalerts.jpg" alt="DonationAlerts Logo">
+        <h3>DonationAlerts</h3>
+      </div>
+      <div class="team-card" onclick="window.location.href = 'https://boosty.to/lighsync';">
+        <img src="../assets/images/donate/boosty.jpg" alt="Boosty Logo">
+        <h3>Boosty</h3>
+      </div>
+      <div class="team-card" onclick="window.location.href =  'https://t.me/boost/lighsync';">
+        <img src="../assets/images/donate/telegram.jpg" alt="Telegram Logo">
+        <h3>Telegram</h3>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2023-2025 LighSync Games. Все права защищены. | 
+      <a href="index.html">Русский</a> | <a href="en/index.html">English</a>
+    </p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.navbar');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
